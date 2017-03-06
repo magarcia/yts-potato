@@ -1,0 +1,10 @@
+[Unit]
+Description=YTS Potato
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/osmc/yts-potato/torrents.py
+
+[Install]
+WantedBy=multi-user.target
